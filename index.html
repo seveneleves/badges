@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Badges</title>
+  </head>
+
+  <body>
+
+    <div id="main-content">
+
+      <h1>Check out my badges !</h1>
+
+      <div class="badge-container">
+
+        <div id="cse" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/cse.png" alt="cse">
+          <span class="tooltip-text">Merci le CSE !</span>
+        </div>
+        <div id="rao" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/rao.png" alt="rao">
+          <span class="tooltip-text">CCTP mon amour</span>
+        </div>
+        <div id="copil" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/copil.png" alt="copil">
+          <span class="tooltip-text">Passion COPIL</span>
+        </div>
+        <div id="new" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/new.png" alt="new">
+          <span class="tooltip-text">Ka-ching !</span>
+        </div>
+        <!-- <div onclick="modal(this)" class="badge text-big">5</div>
+        <div onclick="modal(this)" class="badge text-big">6</div>
+        <div onclick="modal(this)" class="badge text-big">7</div> -->
+
+      </div>
+
+    </div>
+
+    <div id="modalBox" class="modal-container">
+
+      <div class="modal-background"></div>
+
+      <div class="modal-content">
+
+        <div class="modal-certification-info">
+          <div class="title">
+            <h1 id="certificate-name"></h1>
+            <img id="checkmark" src="">
+          </div>
+
+          <h2 id="certificate-category"></h2>
+          <p class="text-big" id="certificate-description"></p>
+          <p>
+            <span class="bold">Année d'obtention : </span><span id="certificate-year"></<span>
+          </p>
+          <p>
+            <span class="bold">Manager : </span><span id="certificate-manager"></<span>
+          </p>
+          <p>
+            <span class="bold">UO : </span><span id="certificate-uo"></<span>
+          </p>
+          <p>
+            <span class="bold">Compétence 1 : </span><span id="certificate-skill-type-0"></<span>
+          </p>
+          <p class="italic" id="certificate-skill-comment-0"></p>
+          <p>
+            <span class="bold">Compétence 2 : </span><span id="certificate-skill-type-1"></<span>
+          </p>
+          <p class="italic" id="certificate-skill-comment-1"></p>
+          <p>
+            <span class="bold">Compétence 3 : </span><span id="certificate-skill-type-2"></<span>
+          </p>
+          <p class="italic" id="certificate-skill-comment-2"></p>
+
+          <p>Consultez <a id="certificate-link" href="" target="_blank">ici</a> le certificat blockchain</p>
+
+        </div>
+
+        <img id="badge-icon" class="grade-full" src="" alt="badge">
+
+      </div>
+
+      <span id="close">&times;</span>
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js">
+
+    </script>
+
+  </body>
+
+</html>

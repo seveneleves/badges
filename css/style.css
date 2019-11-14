@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+.badge-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.badge {
+  width: 170px;
+  height: 220px;
+  position: relative;
+}
+
+.badge .tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 5px; 
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  bottom: 0;
+  opacity: 0;
+  margin: -0.8rem auto auto auto;
+}
+
+.badge:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.badge:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.modal-container {
+  display: none;
+  animation-name: scale;
+  animation-duration: 0.4s;
+  width: 1100px;
+  height: 600px;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  border: 5px solid gray;
+  text-align: justify;
+}
+
+.modal-background {
+  height: 100%;
+  width: 100%;
+  background-color: lightgray;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+
+.modal-content {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-certification-info {
+  margin-left: 3rem;
+  width: 600px;
+}
+
+.grade-full {
+  width: 30%;
+  margin: auto;
+  display: block;
+}
+
+.grade-small {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+#checkmark {
+  width: 7%;
+  margin-left: 1rem;
+}
+
+#certificate-category {
+  margin-top: 0;
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+#close:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* .not-selectable {
+  -moz-user-select: none;
+  user-select: none;
+} */
+
+.badge-deactivated {
+  filter: grayscale(100%);
+}
